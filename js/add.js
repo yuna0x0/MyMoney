@@ -7,6 +7,7 @@ $("#submit").click(function() {
     $("#name-input").attr('class','field');
     $("#price-input").attr('class','field');
     $("#category-select").attr('class','ui selection dropdown');
+    $("#saving").append('<div class="ui icon message"><i class="notched circle loading icon"></i><div class="content"><div class="header">正在儲存...</div><p>請稍等</p></div></div>')
     var date = $("#date").val();
     var name = $("#name").val();
     var categoryselect = $("#category-select").dropdown('get value');
@@ -16,30 +17,35 @@ $("#submit").click(function() {
         if(date === ""){
             $("#date-input").attr('class','field error');
             var dateerror = true
+            $("#saving").empty();
         }else{
             var dateerror = false
         }
         if(name === "") {
             $("#name-input").attr('class','field error');
             var nameerror = true
+            $("#saving").empty();
         }else{
             var nameerror = false
         }
         if(categoryselect === "") {
             $("#category-select").attr('class','ui selection dropdown error');
             var categoryselecterror = true
+            $("#saving").empty();
         }else{
             var categoryselecterror = false
         }
         if(price === ""){
             $("#price-input").attr('class','field error');
             var priceerror = true
+            $("#saving").empty();
         }else{
             var priceerror = false
         }
         if($.isNumeric(price) !== true ){
             $("#price-input").attr('class','field error');
             var pricenumerror = true
+            $("#saving").empty();
         }else{
             var pricenumerror = false
         }
@@ -72,5 +78,6 @@ $("#submit").click(function() {
             ;
           })
         ;
+        $("#saving").empty();
     }   
 });

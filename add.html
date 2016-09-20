@@ -32,6 +32,10 @@
                     </li>
                     <li class="active"><a href="add.html">記帳</a>
                     </li>
+                    <li><a href="10-expense.html">最近10筆支出</a>
+                    </li>
+                    <li><a href="search.html">支出查詢</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -39,6 +43,8 @@
     <div class="ui container">
         <div id="page-header" class="ui page-header">
             <h1 class="text-center">記帳</h1>
+            <div id="saving">
+            </div>
         </div>
         <form class="ui form">
             <div class="field" id="date-input">
@@ -66,10 +72,10 @@
             <div class="field" id="price-input">
                     <label>價錢</label>
                     <input type="text" id="price" placeholder="200">
-                </div>
-                <div class="field">
-                    <button class="ui blue button" type="button" id="submit">記帳!</button>
-                </div>
+            </div>
+            <div class="field">
+                <button class="ui blue button" type="button" id="submit">記帳!</button>
+                <a href="index.html"><button class="ui button" type="button">返回</button>
             </div>
         </form>
     </div>
