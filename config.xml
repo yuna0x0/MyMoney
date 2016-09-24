@@ -9,10 +9,10 @@
 
   <name>MyMoney</name>
   <platform name="ios">
-    <icon src="resource/favicon.ico" />
+    <icon src="resource/icon.png" />
   </platform>
   <platform name="android">
-    <icon src="resource/favicon.ico" />
+    <icon src="resource/iconn.png" />
   </platform>
   <author href="https://www.edisonlee55.com" email="edisonlee55@dumbeartech.com">
       Edison Lee
