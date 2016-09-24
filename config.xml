@@ -10,9 +10,15 @@
   <name>MyMoney</name>
   <platform name="ios">
     <icon src="resource/icon.png" />
+    <icon src="icon120x120.png" width="120" height="120" />
+    <icon src="icon76x76.png" width="76" height="76" />
+    <icon src="icon152x152.png" width="152" height="152" />
   </platform>
   <platform name="android">
     <icon src="resource/icon.png" />
+    <icon src="icon120x120.png" width="120" height="120" />
+    <icon src="icon76x76.png" width="76" height="76" />
+    <icon src="icon152x152.png" width="152" height="152" />
   </platform>
   <author href="https://www.edisonlee55.com" email="edisonlee55@dumbeartech.com">
       Edison Lee
