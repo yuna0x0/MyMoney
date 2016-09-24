@@ -8,8 +8,12 @@
 <!-- versionCode is optional and Android only -->
 
   <name>MyMoney</name>
-  <platform name="ios" />
-  <platform name="android" />
+  <platform name="ios">
+    <icon src="resource/favicon.ico" />
+  </platform>
+  <platform name="android">
+    <icon src="resource/favicon.ico" />
+  </platform>
   <author href="https://www.edisonlee55.com" email="edisonlee55@dumbeartech.com">
       Edison Lee
   </author>
