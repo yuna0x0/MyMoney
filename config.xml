@@ -10,15 +10,18 @@
   <name>MyMoney</name>
   <platform name="ios">
     <icon src="resource/icon.png" />
-    <icon src="resource/icon120x120.png" width="120" height="120" />
-    <icon src="resource/icon76x76.png" width="76" height="76" />
-    <icon src="resource/icon152x152.png" width="152" height="152" />
+    <icon src="resource/icon-60@3x.png" platform="ios" width="180" height="180" />
+    <icon src="resource/icon-60.png" platform="ios" width="60" height="60" />
+    <icon src="resource/icon-60@2x.png" platform="ios" width="120" height="120" />
+    <icon src="resource/icon-76.png" platform="ios" width="76" height="76" />
+    <icon src="resource/icon-76@2x.png" platform="ios" width="152" height="152" />
+    <icon src="resource/icon-small.png" platform="ios" width="29" height="29" />
+    <icon src="resource/icon-small@2x.png" platform="ios" width="58" height="58" />
+    <icon src="resource/icon-40.png" platform="ios" width="40" height="40" />
+    <icon src="resource/icon-40@2x.png" platform="ios" width="80" height="80" />
   </platform>
   <platform name="android">
     <icon src="resource/icon.png" />
-    <icon src="resource/icon120x120.png" width="120" height="120" />
-    <icon src="resource/icon76x76.png" width="76" height="76" />
-    <icon src="resource/icon152x152.png" width="152" height="152" />
   </platform>
   <author href="https://www.edisonlee55.com" email="edisonlee55@dumbeartech.com">
       Edison Lee
