@@ -1,7 +1,7 @@
 var fdb = new ForerunnerDB();
-var db = fdb.db("DB");
-var expensesCollection = db.collection("expenses");
-expensesCollection.load();
+var db = fdb.db("MyMoneyDB");
+var collection = db.collection("MyMoneyCollection");
+collection.load();
 $("#submit").on("click",function(){
 var searchMode = $("input[name='mode']:checked").val();
 var from="", to="";
@@ -19,15 +19,15 @@ if (searchMode=='thisMonth') {
   to = $("#to").val();
 }
 
-var categories={
-  "餐飲": 0,
+var category={
+  "食物": 0,
+  "衣服": 0,
   "交通": 0,
-  "娛樂": 0,
-  "生活開銷": 0
+  "娛樂": 0
 };
 var total = 0;
 
-var expenses = expensesCollection.find(
+var expenses = collection.find(
   {
     date:{
       $gte:from,
@@ -44,14 +44,14 @@ if(expenses.length===0){
   $("tbody").append("<tr><td colspan='3' style='text-align:center'>查無資料</td></tr>");
 } else {
   for(var i=0;i<expenses.length; i++){
-    $("#expenses tbody").append("<tr><td>"+expenses[i].date+"</td><td>"+expenses[i].name+"</td><td>"+expenses[i].amount+"</td></tr>");
-    categories[expenses[i].category] += expenses[i].amount/1;
-    total += expenses[i].amount/1;
+    $("#expenses tbody").append("<tr><td>"+expenses[i].date+"</td><td>"+expenses[i].name+"</td><td>"+expenses[i].price+"</td></tr>");
+    category[expenses[i].category] += expenses[i].price/1;
+    total += expenses[i].price/1;
   }
-  for(key in categories){
-    var amount = categories[key];
-    $("#categories tbody").append("<tr><td>"+key+"</td><td>"+amount+"</td><td>"+Math.round(amount/total*100)+"%"+"</td></tr>");
+  for(key in category){
+    var price = category[key];
+    $("#category tbody").append("<tr><td>"+key+"</td><td>"+price+"</td><td>"+Math.round(price/total*100)+"%"+"</td></tr>");
   }
-  $("#categories tbody").append("<tr><td colspan='3'>總計: "+total+"</td></tr>");
+  $("#category tbody").append("<tr><td colspan='3'>總計: "+total+"</td></tr>");
 }
 });
