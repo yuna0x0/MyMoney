@@ -1,5 +1,5 @@
 /*!
- * MyMoney - main.js
+ * MyMoney - main.js v.2.0
  * Copyright 2017 Edison Lee (MING-CHIEN LEE)
  */
 $('.ui.dropdown')

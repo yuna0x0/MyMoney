@@ -1,5 +1,5 @@
 /*!
- * MyMoney - add.js
+ * MyMoney - add.js v.2.0
  * Copyright 2017 Edison Lee (MING-CHIEN LEE)
  */
 var fdb = new ForerunnerDB();

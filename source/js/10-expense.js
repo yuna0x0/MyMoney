@@ -1,5 +1,5 @@
 /*!
- * MyMoney - 10-expense.js
+ * MyMoney - 10-expense.js v.2.0
  * Copyright 2017 Edison Lee (MING-CHIEN LEE)
  */
 var fdb = new ForerunnerDB();
