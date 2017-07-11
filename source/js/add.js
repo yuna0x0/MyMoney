@@ -1,59 +1,63 @@
+/*!
+ * MyMoney - add.js
+ * Copyright 2017 Edison Lee (MING-CHIEN LEE)
+ */
 var fdb = new ForerunnerDB();
 var db = fdb.db("MyMoneyDB");
 var collection = db.collection("MyMoneyCollection");
 collection.load();
-$("#submit").click(function() {
-    $("#date-input").attr('class','field');
-    $("#name-input").attr('class','field');
-    $("#price-input").attr('class','field');
-    $("#category-select").attr('class','ui selection dropdown');
+$("#submit").click(function () {
+    $("#date-input").attr('class', 'field');
+    $("#name-input").attr('class', 'field');
+    $("#price-input").attr('class', 'field');
+    $("#category-select").attr('class', 'ui selection dropdown');
     $("#saving").append('<div class="ui icon message"><i class="notched circle loading icon"></i><div class="content"><div class="header">正在儲存...</div><p>請稍等</p></div></div>')
     var date = $("#date").val();
     var name = $("#name").val();
     var categoryselect = $("#category-select").dropdown('get value');
     var price = $("#price").val();
     var error = true
-    if(error === true){
-        if(date === ""){
-            $("#date-input").attr('class','field error');
+    if (error === true) {
+        if (date === "") {
+            $("#date-input").attr('class', 'field error');
             var dateerror = true
             $("#saving").empty();
-        }else{
+        } else {
             var dateerror = false
         }
-        if(name === "") {
-            $("#name-input").attr('class','field error');
+        if (name === "") {
+            $("#name-input").attr('class', 'field error');
             var nameerror = true
             $("#saving").empty();
-        }else{
+        } else {
             var nameerror = false
         }
-        if(categoryselect === "") {
-            $("#category-select").attr('class','ui selection dropdown error');
+        if (categoryselect === "") {
+            $("#category-select").attr('class', 'ui selection dropdown error');
             var categoryselecterror = true
             $("#saving").empty();
-        }else{
+        } else {
             var categoryselecterror = false
         }
-        if(price === ""){
-            $("#price-input").attr('class','field error');
+        if (price === "") {
+            $("#price-input").attr('class', 'field error');
             var priceerror = true
             $("#saving").empty();
-        }else{
+        } else {
             var priceerror = false
         }
-        if($.isNumeric(price) !== true ){
-            $("#price-input").attr('class','field error');
+        if ($.isNumeric(price) !== true) {
+            $("#price-input").attr('class', 'field error');
             var pricenumerror = true
             $("#saving").empty();
-        }else{
+        } else {
             var pricenumerror = false
         }
-        if(dateerror === false){
-            if(nameerror === false){
-                if(categoryselecterror === false){
-                    if(priceerror === false){
-                        if(pricenumerror === false){
+        if (dateerror === false) {
+            if (nameerror === false) {
+                if (categoryselecterror === false) {
+                    if (priceerror === false) {
+                        if (pricenumerror === false) {
                             error = false
                         }
                     }
@@ -61,7 +65,7 @@ $("#submit").click(function() {
             }
         }
     }
-    if(error === false){
+    if (error === false) {
         collection.insert({
             date: date,
             name: name,
@@ -71,13 +75,13 @@ $("#submit").click(function() {
         collection.save();
         $("#page-header").append('<div class="ui success message"><i class="close icon"></i><div class="header">記帳完成!</div><p>紀錄已經儲存至資料庫</p></div>');
         $('.message .close')
-          .on('click', function() {
-            $(this)
-              .closest('.message')
-              .transition('fade')
+            .on('click', function () {
+                $(this)
+                    .closest('.message')
+                    .transition('fade')
+                    ;
+            })
             ;
-          })
-        ;
         $("#saving").empty();
-    }   
+    }
 });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,33 @@
     <meta name="author" content="">
     <link rel="icon" href="resource/favicon.ico">
     <title>首頁|MyMoney</title>
+    <link href="css/tether.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/stylesheet.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">MyMoney</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">首頁</a>
-                    </li>
-                    <li><a href="add.html">記帳</a>
-                    </li>
-                    <li><a href="10-expense.html">最近10筆支出</a>
-                    </li>
-                    <li><a href="search.html">支出查詢</a>
-                    </li>
-                </ul>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <a class="navbar-brand" href="index.html">MyMoney</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="add.html">記帳</a>
+                <a class="nav-item nav-link" href="10-expense.html">最近10筆支出</a>
+                <a class="nav-item nav-link" href="search.html">支出查詢</a>
             </div>
         </div>
     </nav>
     <div class="ui container">
         <div class="ui page-header">
-            <h1 class="text-center">MyMoney</h1>
+            <br>
+            <h1 class="text-center">MyMoney</h1><br>
         </div>
         <form class="ui form">
             <div class="field">
@@ -51,15 +45,17 @@
                 <a href="10-expense.html"><button class="ui blue massive fluid button" type="button">最近10筆支出</button></a>
             </div>
             <div class="field">
-                <a href="search.html"><button class="ui blue massive fluid button" type="button">支出查詢</button>
+                <a href="search.html"><button class="ui blue massive fluid button" type="button">支出查詢</button></a>
             </div>
         </form>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/semantic.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/fdb-all.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>
