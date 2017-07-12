@@ -11,7 +11,7 @@ $("#submit").click(function () {
     $("#name-input").attr('class', 'field');
     $("#price-input").attr('class', 'field');
     $("#category-select").attr('class', 'ui selection dropdown');
-    $("#saving").append('<div class="ui icon message"><i class="notched circle loading icon"></i><div class="content"><div class="header">正在儲存...</div><p>請稍等</p></div></div>')
+    $("#saving").append('<div class="ui icon message"><i class="notched circle loading icon"></i><div class="content"><div class="header">Saving...</div><p>Please Wait</p></div></div>')
     var date = $("#date").val();
     var name = $("#name").val();
     var categoryselect = $("#category-select").dropdown('get value');
@@ -73,7 +73,7 @@ $("#submit").click(function () {
             price: price
         });
         collection.save();
-        $("#page-header").append('<div class="ui success message"><i class="close icon"></i><div class="header">記帳完成!</div><p>紀錄已經儲存至資料庫</p></div>');
+        $("#page-header").append('<div class="ui success message"><i class="close icon"></i><div class="header">Record Success!</div><p>Expense saved to the database</p></div>');
         $('.message .close')
             .on('click', function () {
                 $(this)

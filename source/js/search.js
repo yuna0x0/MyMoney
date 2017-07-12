@@ -12,9 +12,9 @@ $("#submit").on("click", function () {
   if (searchMode == 'thisMonth') {
     var date = new Date();
     var year = date.getUTCFullYear();
-    var month = date.getUTCMonth() + 1; // gteMonth 的結果會是實際月份-1
+    var month = date.getUTCMonth() + 1;
     if (month <= 9) {
-      month = "0" + month; // 必須讓月份以雙位數顯示，否則無法比較 ( Ex. 2016-10-1 會小於 2016-6-1 )
+      month = "0" + month;
     }
     from = year + "-" + month + "-" + "01";
     to = year + "-" + month + "-" + "31";
@@ -23,10 +23,10 @@ $("#submit").on("click", function () {
     to = $("#to").val();
   }
   var category = {
-    "食物": 0,
-    "衣服": 0,
-    "交通": 0,
-    "娛樂": 0
+    "Food": 0,
+    "Clothing": 0,
+    "Transportation": 0,
+    "Entertainment": 0
   };
   var total = 0;
   var expenses = collection.find(
@@ -41,7 +41,7 @@ $("#submit").on("click", function () {
   );
   $("tbody").html("");
   if (expenses.length === 0) {
-    $("tbody").append("<tr><td colspan='3' style='text-align:center'>查無資料</td></tr>");
+    $("tbody").append("<tr><td colspan='3' style='text-align:center'>No Data</td></tr>");
   } else {
     for (var i = 0; i < expenses.length; i++) {
       $("#expenses tbody").append("<tr><td>" + expenses[i].date + "</td><td>" + expenses[i].name + "</td><td>" + expenses[i].price + "</td></tr>");
@@ -52,6 +52,6 @@ $("#submit").on("click", function () {
       var price = category[key];
       $("#category tbody").append("<tr><td>" + key + "</td><td>" + price + "</td><td>" + Math.round(price / total * 100) + "%" + "</td></tr>");
     }
-    $("#category tbody").append("<tr><td colspan='3'>總計: " + total + "</td></tr>");
+    $("#category tbody").append("<tr><td colspan='3'>Total: " + total + "</td></tr>");
   }
 });
