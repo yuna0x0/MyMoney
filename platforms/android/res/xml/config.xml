@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.edisonlee55.mymoney" version="1.2.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>MyMoney</name>
+    <content src="index.html" />
+    <icon src="icon.png" />
+    <author email="edisonlee@edisonlee55.com" href="https://www.edisonlee55.com">
+      Edison Lee
+  </author>
+    <preference name="loglevel" value="DEBUG" />
+</widget>

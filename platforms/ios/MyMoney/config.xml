@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.edisonlee55.mymoney" version="1.2.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>MyMoney</name>
+    <content src="index.html" />
+    <icon src="icon.png" />
+    <author email="edisonlee@edisonlee55.com" href="https://www.edisonlee55.com">
+      Edison Lee
+  </author>
+    <icon height="180" platform="ios" src="www/resource/icon-60@3x.png" width="180" />
+    <icon height="60" platform="ios" src="www/resource/icon-60.png" width="60" />
+    <icon height="120" platform="ios" src="www/resource/icon-60@2x.png" width="120" />
+    <icon height="76" platform="ios" src="www/resource/icon-76.png" width="76" />
+    <icon height="152" platform="ios" src="www/resource/icon-76@2x.png" width="152" />
+    <icon height="29" platform="ios" src="www/resource/icon-small.png" width="29" />
+    <icon height="58" platform="ios" src="www/resource/icon-small@2x.png" width="58" />
+    <icon height="40" platform="ios" src="www/resource/icon-40.png" width="40" />
+    <icon height="80" platform="ios" src="www/resource/icon-40@2x.png" width="80" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+</widget>

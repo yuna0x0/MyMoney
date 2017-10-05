@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.edisonlee55.mymoney"
+    versionCode = "9"
+    version     = "1.4.0" >
+
+<!-- versionCode is optional and Android only -->
+  <name>MyMoney</name>
+  <content src="index.html" />
+  <icon src="icon.png" />
+  <platform name="ios">
+    <icon src="resource/ios/icon-20.png" platform="ios" width="20" height="20" />
+    <icon src="resource/ios/icon-20@2x.png" platform="ios" width="40" height="40" />
+    <icon src="resource/ios/icon-20@2x-1.png" platform="ios" width="40" height="40" />
+    <icon src="resource/ios/icon-20@3x.png" platform="ios" width="60" height="60" />
+    <icon src="resource/ios/icon-29.png" platform="ios" width="29" height="29" />
+    <icon src="resource/ios/icon-29@2x.png" platform="ios" width="58" height="58" />
+    <icon src="resource/ios/icon-29@2x-1.png" platform="ios" width="58" height="58" />
+    <icon src="resource/ios/icon-29@3x.png" platform="ios" width="87" height="87" />
+    <icon src="resource/ios/icon-40.png" platform="ios" width="40" height="40" />
+    <icon src="resource/ios/icon-40@2x.png" platform="ios" width="80" height="80" />
+    <icon src="resource/ios/icon-40@3x.png" platform="ios" width="120" height="120" />
+    <icon src="resource/ios/icon-60.png" platform="ios" width="60" height="60" />
+    <icon src="resource/ios/icon-60@2x.png" platform="ios" width="120" height="120" />
+    <icon src="resource/ios/icon-60@3x.png" platform="ios" width="180" height="180" />
+    <icon src="resource/ios/icon-76.png" platform="ios" width="76" height="76" />
+    <icon src="resource/ios/icon-76@2x.png" platform="ios" width="152" height="152" />
+    <icon src="resource/ios/icon-83.5@2x.png" platform="ios" width="167" height="167" />
+  </platform>
+  <platform name="android">
+  </platform>
+  <author href="https://www.edisonlee55.com" email="edisonlee@edisonlee55.com">
+      Edison Lee
+  </author>
+
+</widget>
