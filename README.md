@@ -1,1 +1,1 @@
-# MyApp
+# MyMoney
