@@ -2,7 +2,7 @@
   "name": "mymoney",
   "version": "1.0.5",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,7 @@
     "Money"
   ],
   "author": "Edison Lee",
-  "license": "ISC",
+  "license": "MyMoney EULA",
   "bugs": {
     "url": "https://github.com/edisonlee55/MyMoney/issues"
   },
