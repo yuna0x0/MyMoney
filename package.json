@@ -16,12 +16,10 @@
     "Money"
   ],
   "author": "Edison Lee",
-  "license": "MyMoney EULA",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/edisonlee55/MyMoney/issues"
   },
   "homepage": "https://github.com/edisonlee55/MyMoney#readme",
-  "dependencies": {
-    "mocha": "^4.0.1"
-  }
+  "dependencies": {}
 }
