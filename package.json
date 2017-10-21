@@ -21,5 +21,7 @@
     "url": "https://github.com/edisonlee55/MyMoney/issues"
   },
   "homepage": "https://github.com/edisonlee55/MyMoney#readme",
-  "dependencies": {}
+  "dependencies": {
+    "mocha": "^4.0.1"
+  }
 }
