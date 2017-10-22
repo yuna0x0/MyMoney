@@ -15,12 +15,25 @@
     "My",
     "Money"
   ],
-  "author": "Edison Lee",
+  "logo": "https://cdn.edisonlee55.com/resources/mymoney/images/icon.png",
+  "author": {
+    "name": "Edison Lee",
+    "email": "edisonlee@edisonlee55.com",
+    "url": "https://www.edisonlee55.com"
+  },
+  "contributors": [
+    {
+      "name": "Edison Lee",
+      "email": "edisonlee@edisonlee55.com",
+      "url": "https://www.edisonlee55.com"
+    }
+  ],
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/edisonlee55/MyMoney/issues"
+    "url": "https://github.com/edisonlee55/MyMoney/issues",
+    "email": "edisonlee@edisonlee55.com"
   },
-  "homepage": "https://github.com/edisonlee55/MyMoney#readme",
+  "homepage": "https://mymoney.edisonlee55.com",
   "dependencies": {
     "mocha": "^4.0.1"
   }
