@@ -5,7 +5,7 @@
  *    This program is free software: you can redistribute it and/or modify
  *    it under the terms of the GNU Affero General Public License as published
  *    by the Free Software Foundation, either version 3 of the License, or
- *    (at your option) any later version.
+ *    any later version.
  * 
  *    This program is distributed in the hope that it will be useful,
  *    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -18,5 +18,5 @@
  *    Copyright Contact Information
  *    MING-CHIEN LEE <edisonlee@edisonlee55.com> (https://www.edisonlee55.com/#contact)
  */
-console.log('MyMoney v.1.0.12');
+console.log('MyMoney v.1.0.13');
 console.log('Copyright (C) 2017 MING-CHIEN LEE. All rights reserved.');
