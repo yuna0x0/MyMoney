@@ -11,4 +11,7 @@ MyMoney is a lightweight, simple accounting software with an easy interface and 
 
 
 ## License
+
+[GNU Affero General Public License v3.0](LICENSE)
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fedisonlee55%2FMyMoney.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fedisonlee55%2FMyMoney?ref=badge_large)
