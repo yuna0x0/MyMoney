@@ -1,6 +1,6 @@
 {
   "name": "mymoney",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A lightweight, simple accounting software with an easy interface and minimal functionality",
   "main": "index.js",
   "scripts": {

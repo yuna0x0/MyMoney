@@ -1,5 +1,5 @@
 /*!
- *    MyMoney - search.js v.1.0
+ *    MyMoney - search.js v.1.1
  *    Copyright (C) 2017 MING-CHIEN LEE
  * 
  *    This program is free software: you can redistribute it and/or modify
@@ -25,7 +25,7 @@ collection.load();
 $("#submit").on("click", function () {
   var searchMode = $("input[name='mode']:checked").val();
   var from = "", to = "";
-  if (searchMode == 'thisMonth') {
+  if (searchMode == "thisMonth") {
     var date = new Date();
     var year = date.getUTCFullYear();
     var month = date.getUTCMonth() + 1;
@@ -34,7 +34,7 @@ $("#submit").on("click", function () {
     }
     from = year + "-" + month + "-" + "01";
     to = year + "-" + month + "-" + "31";
-  } else if (searchMode == 'period') {
+  } else if (searchMode == "period") {
     from = $("#from").val();
     to = $("#to").val();
   }

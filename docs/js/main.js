@@ -1,5 +1,5 @@
 /*!
- *    MyMoney - main.js v.1.0
+ *    MyMoney - main.js v.1.1
  *    Copyright (C) 2017 MING-CHIEN LEE
  * 
  *    This program is free software: you can redistribute it and/or modify
@@ -18,9 +18,7 @@
  *    Copyright Contact Information
  *    MING-CHIEN LEE <edisonlee@edisonlee55.com> (https://www.edisonlee55.com/#contact)
  */
-$('.ui.dropdown')
-    .dropdown()
-;
+$(".ui.dropdown").dropdown();
 var fdb = new ForerunnerDB();
 var db = fdb.db("MyMoneyDB");
 var collection = db.collection("MyMoneyCollection");

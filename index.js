@@ -18,5 +18,5 @@
  *    Copyright Contact Information
  *    MING-CHIEN LEE <edisonlee@edisonlee55.com> (https://www.edisonlee55.com/#contact)
  */
-console.log('MyMoney v.1.0.14');
-console.log('Copyright (C) 2017 MING-CHIEN LEE. All rights reserved.');
+console.log("MyMoney v.1.0.15");
+console.log("Copyright (C) 2017 MING-CHIEN LEE. All rights reserved.");
