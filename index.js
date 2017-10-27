@@ -1,5 +1,5 @@
 /*!
- *    MyMoney - index.js v.1.0
+ *    MyMoney - index.js v.1.1
  *    Copyright (C) 2017 MING-CHIEN LEE
  * 
  *    This program is free software: you can redistribute it and/or modify
@@ -18,5 +18,7 @@
  *    Copyright Contact Information
  *    MING-CHIEN LEE <edisonlee@edisonlee55.com> (https://www.edisonlee55.com/#contact)
  */
-console.log("MyMoney v.1.0.15");
-console.log("Copyright (C) 2017 MING-CHIEN LEE. All rights reserved.");
+const electron = require('electron');
+const proc = require('child_process');
+console.log(electron);
+const child = proc.spawn(electron);
