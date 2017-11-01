@@ -38,7 +38,7 @@
   "homepage": "https://mymoney.edisonlee55.com",
   "dependencies": {
     "asar": "^0.13.0",
-    "electron": "1.7.9",
+    "electron": "^1.8.1",
     "mocha": "^4.0.1"
   }
 }
