@@ -18,7 +18,7 @@
  *    Copyright Contact Information
  *    MING-CHIEN LEE <edisonlee@edisonlee55.com> (https://www.edisonlee55.com/#contact)
  */
-const electron = require('electron');
-const proc = require('child_process');
+const electron = require("electron");
+const proc = require("child_process");
 console.log(electron);
 const child = proc.spawn(electron);
