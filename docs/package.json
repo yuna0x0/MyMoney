@@ -1,0 +1,36 @@
+{
+  "name": "mymoney",
+  "version": "1.0.15",
+  "description": "A lightweight, simple accounting software with an easy interface and minimal functionality",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edisonlee55/MyMoney.git"
+  },
+  "keywords": [
+    "MyMoney",
+    "My",
+    "Money"
+  ],
+  "logo": "https://cdn.edisonlee55.com/resources/mymoney/images/icon.png",
+  "author": {
+    "name": "Edison Lee",
+    "email": "edisonlee@edisonlee55.com",
+    "url": "https://www.edisonlee55.com"
+  },
+  "contributors": [
+    {
+      "name": "Edison Lee",
+      "email": "edisonlee@edisonlee55.com",
+      "url": "https://www.edisonlee55.com"
+    }
+  ],
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/edisonlee55/MyMoney/issues",
+    "email": "edisonlee@edisonlee55.com"
+  },
+  "homepage": "https://mymoney.edisonlee55.com",
+  "dependencies": {}
+}

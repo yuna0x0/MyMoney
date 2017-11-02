@@ -1,6 +1,22 @@
 /*!
- * MyMoney - search.js v.1.0
- * Copyright 2017 Edison Lee (MING-CHIEN LEE)
+ *    MyMoney - search.js v.1.1
+ *    Copyright (C) 2017 MING-CHIEN LEE
+ * 
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU Affero General Public License as published
+ *    by the Free Software Foundation, either version 3 of the License, or
+ *    any later version.
+ * 
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU Affero General Public License for more details.
+ * 
+ *    You should have received a copy of the GNU Affero General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ *    Copyright Contact Information
+ *    MING-CHIEN LEE <edisonlee@edisonlee55.com> (https://www.edisonlee55.com/#contact)
  */
 var fdb = new ForerunnerDB();
 var db = fdb.db("MyMoneyDB");
@@ -9,7 +25,7 @@ collection.load();
 $("#submit").on("click", function () {
   var searchMode = $("input[name='mode']:checked").val();
   var from = "", to = "";
-  if (searchMode == 'thisMonth') {
+  if (searchMode == "thisMonth") {
     var date = new Date();
     var year = date.getUTCFullYear();
     var month = date.getUTCMonth() + 1;
@@ -18,7 +34,7 @@ $("#submit").on("click", function () {
     }
     from = year + "-" + month + "-" + "01";
     to = year + "-" + month + "-" + "31";
-  } else if (searchMode == 'period') {
+  } else if (searchMode == "period") {
     from = $("#from").val();
     to = $("#to").val();
   }
