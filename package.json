@@ -1,10 +1,9 @@
 {
   "name": "mymoney",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "A lightweight, simple accounting software with an easy interface and minimal functionality",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node ./node_modules/asar/bin/asar.js pack ./docs ./node_modules/electron/dist/Electron.app/Contents/Resources/app.asar",
     "start": "node index.js",
     "test": "mocha"
   },
