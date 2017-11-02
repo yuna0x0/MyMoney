@@ -1,3 +1,5 @@
 language: node_js
 node_js:
   - "node"
+notifications:
+  webhooks: https://app.fossa.io/hooks/travisci
