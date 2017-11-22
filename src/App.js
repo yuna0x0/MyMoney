@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
+import './css/bootstrap.min.css';
+import './css/semantic.min.css';
+import './css/tether.min.css';
+import './font-awesome/css/font-awesome.min.css';
 
 class App extends Component {
   render() {
@@ -151,11 +155,11 @@ function goAddPage() {
           </div>
           <div className="field">
             <label>Category</label>
-            <div id="category-select" className="ui selection dropdown" tabindex="0">
+            <div id="category-select" className="ui selection dropdown" tabIndex="0">
               <div className="default text">Category</div>
               <i className="dropdown icon"></i>
               <input type="hidden" name="category-select" />
-              <div className="menu transition hidden" tabindex="-1">
+              <div className="menu transition hidden" tabIndex="-1">
                 <div className="item" data-value="food">Food</div>
                 <div className="item" data-value="clothes">Clothing</div>
                 <div className="item" data-value="traffic">Transportation</div>
@@ -184,36 +188,36 @@ function goAddPage() {
 function goTenExpensePage() {
   const element = (
     <div className="App">
-      <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      <nav className="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" onClick={goHomePage}>MyMoney</a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" onClick={goHomePage}>Home</a>
-            <a class="nav-item nav-link" onClick={goAddPage}>Record An Expense</a>
-            <a class="nav-item nav-link active" onClick={goTenExpensePage}>Recent 10 Expenses <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" onClick={goSearchPage}>Expenses Search</a>
+        <a className="navbar-brand" onClick={goHomePage}>MyMoney</a>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-item nav-link" onClick={goHomePage}>Home</a>
+            <a className="nav-item nav-link" onClick={goAddPage}>Record An Expense</a>
+            <a className="nav-item nav-link active" onClick={goTenExpensePage}>Recent 10 Expenses <span className="sr-only">(current)</span></a>
+            <a className="nav-item nav-link" onClick={goSearchPage}>Expenses Search</a>
           </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false">
+          <div className="btn-group">
+            <button type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i className="fa fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false">
               </i>
             </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" onClick={goHomePage}>English</a>
-              <a class="dropdown-item" href="zh-TW/index.html">繁體中文</a>
+            <div className="dropdown-menu">
+              <a className="dropdown-item" onClick={goHomePage}>English</a>
+              <a className="dropdown-item" href="zh-TW/index.html">繁體中文</a>
             </div>
           </div>
         </div>
       </nav>
-      <div class="ui container">
-        <div class="ui page-header">
-          <h1 class="text-center">Recent 10 Expenses</h1>
+      <div className="ui container">
+        <div className="ui page-header">
+          <h1 className="text-center">Recent 10 Expenses</h1>
         </div>
-        <table class="ui selectable celled table">
+        <table className="ui selectable celled table">
           <thead>
             <tr>
               <th>Date</th>
@@ -224,7 +228,7 @@ function goTenExpensePage() {
           <tbody>
           </tbody>
         </table>
-        <button class="ui button" onClick={goHomePage}>Back</button>
+        <button className="ui button" onClick={goHomePage}>Back</button>
       </div>
     </div>
   );
@@ -237,49 +241,49 @@ function goTenExpensePage() {
 function goSearchPage() {
   const element = (
     <div className="App">
-      <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      <nav className="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" onClick={goHomePage}>MyMoney</a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" onClick={goHomePage}>Home</a>
-            <a class="nav-item nav-link" onClick={goAddPage}>Record An Expense</a>
-            <a class="nav-item nav-link" onClick={goTenExpensePage}>Recent 10 Expenses</a>
-            <a class="nav-item nav-link active" onClick={goSearchPage}>Expenses Search <span class="sr-only">(current)</span></a>
+        <a className="navbar-brand" onClick={goHomePage}>MyMoney</a>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-item nav-link" onClick={goHomePage}>Home</a>
+            <a className="nav-item nav-link" onClick={goAddPage}>Record An Expense</a>
+            <a className="nav-item nav-link" onClick={goTenExpensePage}>Recent 10 Expenses</a>
+            <a className="nav-item nav-link active" onClick={goSearchPage}>Expenses Search <span className="sr-only">(current)</span></a>
           </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false">
+          <div className="btn-group">
+            <button type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i className="fa fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false">
               </i>
             </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" onClick={goHomePage}>English</a>
-              <a class="dropdown-item" href="zh-TW/index.html">繁體中文</a>
+            <div className="dropdown-menu">
+              <a className="dropdown-item" onClick={goHomePage}>English</a>
+              <a className="dropdown-item" href="zh-TW/index.html">繁體中文</a>
             </div>
           </div>
         </div>
       </nav>
-      <div class="ui container">
-        <div class="ui page-header">
-          <h1 class="text-center">Expenses Search</h1>
+      <div className="ui container">
+        <div className="ui page-header">
+          <h1 className="text-center">Expenses Search</h1>
         </div>
-        <form class="ui form">
+        <form className="ui form">
           <input type="radio" name="mode" value="thisMonth" /> This Month
           <br />
           <input type="radio" name="mode" value="period" /> Specified Period
           <br />From
-          <input id="from" class="input-field" type="date" />To<input id="to" class="input-field" type="date" />
+          <input id="from" className="input-field" type="date" />To<input id="to" className="input-field" type="date" />
           <br /><br />
-          <button class="ui blue button" type="button" id="submit">Search</button>
-          <button class="ui button" type="button" onClick={goHomePage}>Back</button>
+          <button className="ui blue button" type="button" id="submit">Search</button>
+          <button className="ui button" type="button" onClick={goHomePage}>Back</button>
         </form>
 
 
 
-        <table id="expenses" class="ui table">
+        <table id="expenses" className="ui table">
           <thead>
             <tr>
               <th>Date</th>
