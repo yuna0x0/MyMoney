@@ -24,6 +24,9 @@ let template = [{
         role: 'close'
     }, {
         type: 'separator'
+    }, {
+        label: 'Toggle Developer Tools',
+        role: 'toggledevtools'
     }]
 }]
 if (process.platform === 'darwin') {
