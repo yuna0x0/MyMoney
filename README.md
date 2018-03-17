@@ -15,7 +15,6 @@
   <a href="https://snyk.io/test/github/edisonlee55/mymoney?targetFile=package.json"><img src="https://snyk.io/test/github/edisonlee55/mymoney/badge.svg?targetFile=package.json" alt="Known Vulnerabilities"></a>
 </p>
 
----
 
 ## License
 
