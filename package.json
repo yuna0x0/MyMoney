@@ -4,8 +4,8 @@
   "description": "A lightweight, simple accounting software with an easy interface and minimal functionality",
   "main": "index.js",
   "scripts": {
-    "install": "node install.js",
-    "start": "node index.js",
+    "start": "electron .",
+    "build": "asar pack docs build/app.asar",
     "test": "mocha"
   },
   "repository": {
