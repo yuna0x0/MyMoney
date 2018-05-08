@@ -13,3 +13,5 @@ after_failure:
   - wget https://gist.githubusercontent.com/edisonlee55/b37dba1026b7bcbb4c0a1ad67753e25d/raw/f345f1b1c8f96fc09b722744d96284bbe1485560/discord-webhook.sh
   - chmod +x discord-webhook.sh
   - ./discord-webhook.sh failure $DISCORD_WEBHOOK_URL
+script:
+  - yarn dist
