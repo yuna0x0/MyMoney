@@ -1,6 +1,6 @@
 {
   "name": "mymoney",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A lightweight, simple accounting software with an easy interface and minimal functionality",
   "main": "index.js",
   "scripts": {
@@ -46,8 +46,7 @@
     "appId": "com.edisonlee55.mymoney",
     "productName": "MyMoney",
     "copyright": "Copyright © 2018 MING-CHIEN LEE",
-    "mac":
-    {
+    "mac": {
       "category": "public.app-category.finance"
     }
   }
