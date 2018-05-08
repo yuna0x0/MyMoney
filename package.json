@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "release": "build"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,10 @@
   "build": {
     "appId": "com.edisonlee55.mymoney",
     "productName": "MyMoney",
-    "copyright": "Copyright © 2018 MING-CHIEN LEE"
+    "copyright": "Copyright © 2018 MING-CHIEN LEE",
+    "mac":
+    {
+      "category": "public.app-category.finance"
+    }
   }
 }
