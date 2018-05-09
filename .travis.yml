@@ -53,11 +53,11 @@ notifications:
   - https://webhooks.gitter.im/e/b5186dc7b1b157dfb514
 
 after_success:
-  - wget https://gist.githubusercontent.com/edisonlee55/b37dba1026b7bcbb4c0a1ad67753e25d/raw/f345f1b1c8f96fc09b722744d96284bbe1485560/discord-webhook.sh
+  - wget https://gist.githubusercontent.com/edisonlee55/b37dba1026b7bcbb4c0a1ad67753e25d/raw/9d0354064261f9374029f9958d7935bb9e0c80c1/discord-webhook.sh
   - chmod +x discord-webhook.sh
   - ./discord-webhook.sh success $DISCORD_WEBHOOK_URL
 
 after_failure:
-  - wget https://gist.githubusercontent.com/edisonlee55/b37dba1026b7bcbb4c0a1ad67753e25d/raw/f345f1b1c8f96fc09b722744d96284bbe1485560/discord-webhook.sh
+  - wget https://gist.githubusercontent.com/edisonlee55/b37dba1026b7bcbb4c0a1ad67753e25d/raw/9d0354064261f9374029f9958d7935bb9e0c80c1/discord-webhook.sh
   - chmod +x discord-webhook.sh
   - ./discord-webhook.sh failure $DISCORD_WEBHOOK_URL
