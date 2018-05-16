@@ -1,5 +1,5 @@
 /**
- * MyMoney - main.js v.1.1
+ * MyMoney - main.js
  * Copyright (c) 2018 MING-CHIEN LEE
  *
  * This source code is licensed under the MIT license found in the
