@@ -1,14 +1,9 @@
 {
   "name": "mymoney",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "A lightweight, simple accounting software with an easy interface and minimal functionality",
   "main": "index.js",
-  "scripts": {
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "release": "build"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/edisonlee55/MyMoney.git"
@@ -38,16 +33,5 @@
   },
   "homepage": "https://mymoney.edisonlee55.com",
   "dependencies": {},
-  "devDependencies": {
-    "electron": "^2.0.0",
-    "electron-builder": "^20.11.1"
-  },
-  "build": {
-    "appId": "com.edisonlee55.mymoney",
-    "productName": "MyMoney",
-    "copyright": "Copyright © 2018 MING-CHIEN LEE",
-    "mac": {
-      "category": "public.app-category.finance"
-    }
-  }
+  "devDependencies": {}
 }
