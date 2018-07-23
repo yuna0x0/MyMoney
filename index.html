@@ -16,64 +16,42 @@
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">MyMoney</a>
+        <a class="navbar-brand" onclick="callPage('home.html');">MyMoney</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+                <li id="home" class="nav-item">
+                    <a class="nav-link" onclick="callPage('home.html');">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="add.html">Record An Expense</a>
+                <li id="add" class="nav-item">
+                    <a class="nav-link" onclick="callPage('add.html');">Record An Expense</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="10-expense.html">Recent 10 Expenses</a>
+                <li id="10-expense" class="nav-item">
+                    <a class="nav-link" onclick="callPage('10-expense.html');">Recent 10 Expenses</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="search.html">Expenses Search</a>
+                <li id="search" class="nav-item">
+                    <a class="nav-link" onclick="callPage('search.html');">Expenses Search</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="btn btn-primary dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <i class="fas fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="index.html">English</a>
+                        <a class="dropdown-item" onclick="callPage('home.html');">English</a>
                         <a class="dropdown-item" href="zh-TW/index.html">繁體中文</a>
                     </div>
                 </li>
             </ul>
-            <span class="navbar-text">
-                v1.2.8
+            <span id="mymoneyVersion" class="navbar-text">
+
             </span>
     </nav>
-    <div class="ui container">
-        <div class="ui page-header">
-            <br>
-            <h1 class="text-center">MyMoney</h1>
-            <br>
-        </div>
-        <form class="ui form">
-            <div class="field">
-                <a href="add.html">
-                    <button class="ui blue massive fluid button" type="button">Record An Expense</button>
-                </a>
-            </div>
-            <div class="field">
-                <a href="10-expense.html">
-                    <button class="ui blue massive fluid button" type="button">Recent 10 Expenses</button>
-                </a>
-            </div>
-            <div class="field">
-                <a href="search.html">
-                    <button class="ui blue massive fluid button" type="button">Expenses Search</button>
-                </a>
-            </div>
-        </form>
+    <div id="mainContainer" class="ui container">
+
     </div>
     <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
     <script src="js/jquery.min.js"></script>
@@ -83,6 +61,7 @@
     <script src="js/semantic.min.js"></script>
     <script src="js/fdb-all.min.js"></script>
     <script>if (window.module) module = window.module;</script>
+    <script>var mymoneyLanguage = "en";</script>
     <script src="js/main.min.js"></script>
 </body>
 

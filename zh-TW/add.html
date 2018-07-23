@@ -1,107 +1,39 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../resource/favicon.ico">
-    <title>記帳|MyMoney</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
-    <link href="../css/stylesheet.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">MyMoney</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">首頁</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="add.html">記帳
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="10-expense.html">最近10筆支出</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="search.html">支出查詢</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../add.html">English</a>
-                        <a class="dropdown-item" href="add.html">繁體中文</a>
-                    </div>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                v1.2.8
-            </span>
-    </nav>
-    <div class="ui container">
-        <div id="page-header" class="ui page-header">
-            <h1 class="text-center">記帳</h1>
-            <div id="saving">
+<div id="page-header" class="ui page-header">
+    <h1 class="text-center">記帳</h1>
+    <div id="saving">
+    </div>
+</div>
+<form class="ui form">
+    <div class="field" id="date-input">
+        <label>日期</label>
+        <input type="date" id="date">
+    </div>
+    <div class="field" id="name-input">
+        <label>名稱</label>
+        <input type="text" id="name" placeholder="好吃牛肉麵">
+    </div>
+    <div class="field">
+        <label>種類</label>
+        <div id="category-select" class="ui selection dropdown" tabindex="0">
+            <div class="default text">種類</div>
+            <i class="dropdown icon"></i>
+            <input type="hidden" name="category-select">
+            <div class="menu transition hidden" tabindex="-1">
+                <div class="item" data-value="food">食物</div>
+                <div class="item" data-value="clothes">衣服</div>
+                <div class="item" data-value="traffic">交通</div>
+                <div class="item" data-value="entertainment">娛樂</div>
             </div>
         </div>
-        <form class="ui form">
-            <div class="field" id="date-input">
-                <label>日期</label>
-                <input type="date" id="date">
-            </div>
-            <div class="field" id="name-input">
-                <label>名稱</label>
-                <input type="text" id="name" placeholder="好吃牛肉麵">
-            </div>
-            <div class="field">
-                <label>種類</label>
-                <div id="category-select" class="ui selection dropdown" tabindex="0">
-                    <div class="default text">種類</div>
-                    <i class="dropdown icon"></i>
-                    <input type="hidden" name="category-select">
-                    <div class="menu transition hidden" tabindex="-1">
-                        <div class="item" data-value="food">食物</div>
-                        <div class="item" data-value="clothes">衣服</div>
-                        <div class="item" data-value="traffic">交通</div>
-                        <div class="item" data-value="entertainment">娛樂</div>
-                    </div>
-                </div>
-            </div>
-            <div class="field" id="price-input">
-                <label>價錢</label>
-                <input type="text" id="price" placeholder="200">
-            </div>
-            <div class="field">
-                <button class="ui blue button" type="button" id="submit">記帳!</button>
-                <a href="index.html">
-                    <button class="ui button" type="button">返回</button>
-                </a>
-            </div>
-        </form>
     </div>
-    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
-    <script src="../js/jquery.min.js"></script>
-    <script defer src="../fontawesome/fontawesome-all.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/semantic.min.js"></script>
-    <script src="../js/fdb-all.min.js"></script>
-    <script>if (window.module) module = window.module;</script>
-    <script src="../js/main.min.js"></script>
-    <script src="../js/add.min.js"></script>
-</body>
-
-</html>
+    <div class="field" id="price-input">
+        <label>價錢</label>
+        <input type="text" id="price" placeholder="200">
+    </div>
+    <div class="field">
+        <button class="ui blue button" type="button" id="submit">記帳</button>
+        <a onclick="callPage('home.html');">
+            <button class="ui button" type="button">返回</button>
+        </a>
+    </div>
+</form>

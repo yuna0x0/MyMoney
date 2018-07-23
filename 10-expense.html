@@ -1,85 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="resource/favicon.ico">
-    <title>Recent 10 Expenses|MyMoney</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-    <link href="css/stylesheet.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">MyMoney</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="add.html">Record An Expense</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="10-expense.html">Recent 10 Expenses
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="search.html">Expenses Search</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="10-expense.html">English</a>
-                        <a class="dropdown-item" href="zh-TW/10-expense.html">繁體中文</a>
-                    </div>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                v1.2.8
-            </span>
-    </nav>
-    <div class="ui container">
-        <div class="ui page-header">
-            <h1 class="text-center">Recent 10 Expenses</h1>
-        </div>
-        <table class="ui selectable celled table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Item Name</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <a href="index.html">
-            <button class="ui button">Back</button>
-        </a>
-    </div>
-    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
-    <script src="js/jquery.min.js"></script>
-    <script defer src="fontawesome/fontawesome-all.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/semantic.min.js"></script>
-    <script src="js/fdb-all.min.js"></script>
-    <script>if (window.module) module = window.module;</script>
-    <script src="js/main.min.js"></script>
-    <script src="js/10-expense.min.js"></script>
-</body>
-
-</html>
+<div class="ui page-header">
+    <h1 class="text-center">Recent 10 Expenses</h1>
+</div>
+<table class="ui selectable celled table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Item Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<a onclick="callPage('home.html');">
+    <button class="ui button">Back</button>
+</a>
