@@ -1,28 +1,26 @@
 <div class="ui page-header">
-    <h1 class="text-center">支出查詢</h1>
+  <h1 class="text-center">支出查詢</h1>
 </div>
 <form class="ui form">
-    <input type="radio" name="mode" value="thisMonth"> 本月份
-    <br>
-    <input type="radio" name="mode" value="period"> 指定期間
-    <br>從
-    <input id="from" class="input-field" type="date">到
-    <input id="to" class="input-field" type="date">
-    <br>
-    <br>
-    <button class="ui blue button" type="button" id="submit">查詢</button>
-    <a onclick="callPage('home.html');">
-        <button class="ui button" type="button">返回</button>
-    </a>
+  <input type="radio" name="mode" value="thisMonth" /> 本月份
+  <br />
+  <input type="radio" name="mode" value="period" /> 指定期間 <br />從
+  <input id="from" class="input-field" type="date" />到
+  <input id="to" class="input-field" type="date" />
+  <br />
+  <br />
+  <button class="ui blue button" type="button" id="submit">查詢</button>
+  <a onclick="callPage('home.html');">
+    <button class="ui button" type="button">返回</button>
+  </a>
 </form>
 <table id="expenses" class="ui table">
-    <thead>
-        <tr>
-            <th>日期</th>
-            <th>項目</th>
-            <th>金額</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
+  <thead>
+    <tr>
+      <th>日期</th>
+      <th>項目</th>
+      <th>金額</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
 </table>

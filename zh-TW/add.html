@@ -1,39 +1,38 @@
 <div id="page-header" class="ui page-header">
-    <h1 class="text-center">記帳</h1>
-    <div id="saving">
-    </div>
+  <h1 class="text-center">記帳</h1>
+  <div id="saving"></div>
 </div>
 <form class="ui form">
-    <div class="field" id="date-input">
-        <label>日期</label>
-        <input type="date" id="date">
+  <div class="field" id="date-input">
+    <label>日期</label>
+    <input type="date" id="date" />
+  </div>
+  <div class="field" id="name-input">
+    <label>名稱</label>
+    <input type="text" id="name" placeholder="好吃牛肉麵" />
+  </div>
+  <div class="field">
+    <label>種類</label>
+    <div id="category-select" class="ui selection dropdown" tabindex="0">
+      <div class="default text">種類</div>
+      <i class="dropdown icon"></i>
+      <input type="hidden" name="category-select" />
+      <div class="menu transition hidden" tabindex="-1">
+        <div class="item" data-value="food">食物</div>
+        <div class="item" data-value="clothes">衣服</div>
+        <div class="item" data-value="traffic">交通</div>
+        <div class="item" data-value="entertainment">娛樂</div>
+      </div>
     </div>
-    <div class="field" id="name-input">
-        <label>名稱</label>
-        <input type="text" id="name" placeholder="好吃牛肉麵">
-    </div>
-    <div class="field">
-        <label>種類</label>
-        <div id="category-select" class="ui selection dropdown" tabindex="0">
-            <div class="default text">種類</div>
-            <i class="dropdown icon"></i>
-            <input type="hidden" name="category-select">
-            <div class="menu transition hidden" tabindex="-1">
-                <div class="item" data-value="food">食物</div>
-                <div class="item" data-value="clothes">衣服</div>
-                <div class="item" data-value="traffic">交通</div>
-                <div class="item" data-value="entertainment">娛樂</div>
-            </div>
-        </div>
-    </div>
-    <div class="field" id="price-input">
-        <label>價錢</label>
-        <input type="text" id="price" placeholder="200">
-    </div>
-    <div class="field">
-        <button class="ui blue button" type="button" id="submit">記帳</button>
-        <a onclick="callPage('home.html');">
-            <button class="ui button" type="button">返回</button>
-        </a>
-    </div>
+  </div>
+  <div class="field" id="price-input">
+    <label>價錢</label>
+    <input type="text" id="price" placeholder="200" />
+  </div>
+  <div class="field">
+    <button class="ui blue button" type="button" id="submit">記帳</button>
+    <a onclick="callPage('home.html');">
+      <button class="ui button" type="button">返回</button>
+    </a>
+  </div>
 </form>

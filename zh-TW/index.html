@@ -1,68 +1,123 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../resource/favicon.ico">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#fe9f35" />
+    <meta name="apple-mobile-web-app-title" content="MyMoney" />
+    <meta name="application-name" content="MyMoney" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
     <title>首頁|MyMoney</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
-    <link href="../css/stylesheet.min.css" rel="stylesheet">
-</head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css" />
+    <link href="../css/stylesheet.min.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" onclick="callPage('home.html');">MyMoney</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li id="home" class="nav-item active">
-                    <a class="nav-link" onclick="callPage('home.html');">首頁</a>
-                </li>
-                <li id="add" class="nav-item">
-                    <a class="nav-link" onclick="callPage('add.html');">記帳</a>
-                </li>
-                <li id="10-expense" class="nav-item">
-                    <a class="nav-link" onclick="callPage('10-expense.html');">最近10筆支出</a>
-                </li>
-                <li id="search" class="nav-item">
-                    <a class="nav-link" onclick="callPage('search.html');">支出查詢</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <i class="fas fa-globe" aria-hidden="true" aria-haspopup="true" aria-expanded="false"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../index.html">English</a>
-                        <a class="dropdown-item" onclick="callPage('home.html');">繁體中文</a>
-                    </div>
-                </li>
-            </ul>
-            <span id="mymoneyVersion" class="navbar-text">
-
-            </span>
+      <a class="navbar-brand" onclick="callPage('home.html');">MyMoney</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li id="home" class="nav-item active">
+            <a class="nav-link" onclick="callPage('home.html');">首頁</a>
+          </li>
+          <li id="add" class="nav-item">
+            <a class="nav-link" onclick="callPage('add.html');">記帳</a>
+          </li>
+          <li id="10-expense" class="nav-item">
+            <a class="nav-link" onclick="callPage('10-expense.html');"
+              >最近10筆支出</a
+            >
+          </li>
+          <li id="search" class="nav-item">
+            <a class="nav-link" onclick="callPage('search.html');">支出查詢</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button
+              type="button"
+              class="btn btn-primary dropdown-toggle"
+              id="navbarDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i
+                class="fas fa-globe"
+                aria-hidden="true"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../index.html">English</a>
+              <a class="dropdown-item" onclick="callPage('home.html');"
+                >繁體中文</a
+              >
+            </div>
+          </li>
+        </ul>
+        <span id="mymoneyVersion" class="navbar-text"> </span>
+      </div>
     </nav>
-    <div id="mainContainer" class="ui container">
-
-    </div>
-    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <div id="mainContainer" class="ui container"></div>
+    <script>
+      if (typeof module === "object") {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
     <script src="../js/jquery.min.js"></script>
     <script defer src="../fontawesome/fontawesome-all.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/semantic.min.js"></script>
     <script src="../js/fdb-all.min.js"></script>
-    <script>if (window.module) module = window.module;</script>
-    <script>var mymoneyLanguage = "zh-TW";</script>
+    <script>
+      if (window.module) module = window.module;
+    </script>
+    <script>
+      var mymoneyLanguage = "zh-TW";
+    </script>
     <script src="../js/main.min.js"></script>
-</body>
-
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("../sw.js");
+        });
+      }
+    </script>
+  </body>
 </html>
