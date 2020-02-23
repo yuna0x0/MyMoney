@@ -1,6 +1,6 @@
 /**
  * MyMoney - build.js
- * Copyright (c) 2019 MING-CHIEN LEE
+ * Copyright (c) edisonlee55
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
