@@ -12,11 +12,12 @@ var Terser = require("terser");
 const buildSW = () => {
   return workboxBuild
     .generateSW({
-      swDest: "dist/sw.out.js",
+      swDest: "sw.out.js",
       cacheId: "mymoney",
       skipWaiting: true,
       clientsClaim: true,
       cleanupOutdatedCaches: true,
+      sourcemap: false,
       globDirectory: "./",
       globPatterns: [
         "**/*.{html,png,xml,js,css,eot,svg,ttf,woff,woff2,otf,ico,json,webmanifest}"
@@ -30,8 +31,8 @@ const buildSW = () => {
 
 const minify = () => {
   fs.writeFileSync(
-    "sw.js",
-    Terser.minify(fs.readFileSync("dist/sw.out.js", "utf8")).code,
+    "sw.out.js",
+    Terser.minify(fs.readFileSync("sw.out.js", "utf8")).code,
     "utf8"
   );
 };

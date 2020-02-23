@@ -54,7 +54,11 @@
           </div>
         </li>
       </ul>
-      <span id="mymoneyVersion" class="navbar-text"> </span>
+      <div class="col-md-auto custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+        <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+      </div>
+      <span id="mymoneyVersion" class="navbar-text"></span>
     </div>
   </nav>
   <div id="mainContainer" class="ui container"></div>
@@ -65,7 +69,7 @@
     }
   </script>
   <script src="js/jquery.min.js"></script>
-  <script defer src="fontawesome/fontawesome-all.min.js"></script>
+  <script defer src="fontawesome/all.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/semantic.min.js"></script>
@@ -81,7 +85,7 @@
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("/sw.js");
+        navigator.serviceWorker.register("/sw.out.js");
       });
     }
   </script>

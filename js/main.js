@@ -184,6 +184,53 @@ var callCheck = () => {
         });
     }
 }
+
+var darkSwitch = document.getElementById("darkSwitch");
+initTheme();
+darkSwitch.addEventListener("change", function (event) {
+    resetTheme();
+});
+function initTheme() {
+    var darkThemeSelected =
+        localStorage.getItem("darkSwitch") !== null &&
+        localStorage.getItem("darkSwitch") === "dark";
+    darkSwitch.checked = darkThemeSelected;
+    if (darkThemeSelected) {
+        document.body.setAttribute("data-theme", "dark");
+        $(".ui").addClass("inverted");
+        $(".navbar").removeClass("navbar-light");
+        $(".navbar").removeClass("bg-light");
+        $(".navbar").addClass("navbar-dark");
+        $(".navbar").addClass("bg-dark");
+    } else {
+        document.body.removeAttribute("data-theme");
+        $(".ui").removeClass("inverted");
+        $(".navbar").removeClass("navbar-dark");
+        $(".navbar").removeClass("bg-dark");
+        $(".navbar").addClass("navbar-light");
+        $(".navbar").addClass("bg-light");
+    }
+}
+function resetTheme() {
+    if (darkSwitch.checked) {
+        document.body.setAttribute("data-theme", "dark");
+        $(".ui").addClass("inverted");
+        $(".navbar").removeClass("navbar-light");
+        $(".navbar").removeClass("bg-light");
+        $(".navbar").addClass("navbar-dark");
+        $(".navbar").addClass("bg-dark");
+        localStorage.setItem("darkSwitch", "dark");
+    } else {
+        document.body.removeAttribute("data-theme");
+        $(".ui").removeClass("inverted");
+        $(".navbar").removeClass("navbar-dark");
+        $(".navbar").removeClass("bg-dark");
+        $(".navbar").addClass("navbar-light");
+        $(".navbar").addClass("bg-light");
+        localStorage.removeItem("darkSwitch");
+    }
+}
+
 var callPage = (pageRef) => {
     $.ajax({
         url: pageRef,
@@ -194,6 +241,7 @@ var callPage = (pageRef) => {
             nowPage = pageRef;
             $('#mainContainer').html(response);
             $("#" + pageRef.slice(0, -5)).attr('class', 'nav-item active');
+            resetTheme();
             callCheck();
         }
     });
