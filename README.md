@@ -9,11 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.com/edisonlee55/MyMoney"><img src="https://travis-ci.com/edisonlee55/MyMoney.svg?branch=master" alt="Build Status"></a>
-  <a href="https://david-dm.org/edisonlee55/MyMoney"><img src="https://david-dm.org/edisonlee55/MyMoney/status.svg" alt="dependencies Status"></a>
-  <a class="badge-align" href="https://www.codacy.com/app/edisonlee55/MyMoney?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=edisonlee55/MyMoney&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/d10e1dff3aa34bac96734a0abb7cd063"/></a>
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fedisonlee55%2FMyMoney?ref=badge_shield"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fedisonlee55%2FMyMoney.svg?type=shield" alt="FOSSA Status"></a>
-  <a href="https://snyk.io/test/github/edisonlee55/mymoney?targetFile=package.json"><img src="https://snyk.io/test/github/edisonlee55/mymoney/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/edisonlee55/mymoney?targetFile=package.json" style="max-width:100%;"></a>
+  <a class="badge-align" href="https://www.codacy.com/app/edisonlee55/MyMoney?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=edisonlee55/MyMoney&amp;utm_campaign=Badge_Grade"><img src="https://img.shields.io/codacy/grade/d10e1dff3aa34bac96734a0abb7cd063?style=flat-square"/></a>
+  <a href="https://snyk.io/test/github/edisonlee55/mymoney?targetFile=package.json"><img src="https://img.shields.io/snyk/vulnerabilities/github/edisonlee55/MyMoney?style=flat-square" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/edisonlee55/mymoney?targetFile=package.json" style="max-width:100%;"></a>
   <a href="https://discord.gg/FPp6yfC"><img src="https://discordapp.com/api/guilds/395361437876224001/widget.png?style=shield" alt="dev chat"></a>
 </p>
 
@@ -23,6 +20,4 @@
 
 ## License
 
-[MIT](LICENSE)
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fedisonlee55%2FMyMoney.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fedisonlee55%2FMyMoney?ref=badge_large)
+Copyright © edisonlee55. MyMoney is licensed under the [**MIT License**](LICENSE).
