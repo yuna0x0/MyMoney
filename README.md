@@ -17,6 +17,10 @@
   <a href="https://discord.gg/FPp6yfC"><img src="https://discordapp.com/api/guilds/395361437876224001/widget.png?style=shield" alt="dev chat"></a>
 </p>
 
+<p align="center">
+  <a href="https://store.steampowered.com/app/677310/MyMoney/"><img src="https://cdn.edisonlee55.com/resources/images/mymoney-steam-embed-en.jpg"></a>
+</p>
+
 ## License
 
 [MIT](LICENSE)
